@@ -1,0 +1,11 @@
+white
+
+pink #e2b5ea
+blue rgba(172,199,246,255)
+green #bae4eb
+
+black
+
+blue #1d5482
+purple #742c56
+green #046e7e

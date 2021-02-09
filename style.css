@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    font-size: 1.1rem;
+}
+#poster {
+    font-size: 1.6rem;
+}
+.one {
+    background-image: url("WITE.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain, cover;
+    height: 100vh;
+}
+.two {
+    color: rgb(255, 255, 255);
+    background-color: black;
+    background-image: url("wite2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain, cover;
+    height: 100vh;
+}
+ .header {
+    font-size: 3.5rem;
+    text-align: right;
+    width: 40rem;
+    height: min-content;
+    margin: 20px;
+    border-right: 10px #bae4eb solid;
+    padding-right: 20px;
+}
+.header:nth-child(1) {
+    margin-top: 11rem;
+}
+.header:nth-child(2) {
+    border-right: rgba(172,199,246,255) 10px solid;
+}
+.header:nth-child(3) {
+    border-right: #e2b5ea 10px solid;
+}
+
+.two .header {
+    border-right: #742c56 10px solid;
+}
+.two .header:nth-child(1) {
+    margin-top: 12rem;
+}
+.two .header:nth-child(2) {
+    border-right: #046e7e 10px solid;
+}
+.two .header:nth-child(3) {
+    border-right: #1d5482 10px solid;
+}
+.heads {
+    margin: 0rem 0rem 0  40rem;
+    display: flex;
+    flex-direction: column;
+}
+.row {
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+}
+/* img {
+    transition: 350ms;
+}
+img:hover {
+    transform: scale(1.07);
+} */
+#test {
+    width: 1500px;
+    height: 600px;
+}
