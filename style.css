@@ -348,7 +348,7 @@ nav img {
     font-size: 3.5rem;
     background-color: rgb(36, 36, 36);
     color: rgba(233, 187, 62, 0.938);
-    width: fit-content;
+    width: 100%;
     margin: 0 0 0 auto;
     text-align: center;
     
