@@ -22,23 +22,25 @@ const sectionOneObserver = new IntersectionObserver
 
 sectionOneObserver.observe(home)
 
-// Type('گروه تبلیغاتی آرگو', 'demo0')
-// Type('بزرگترین شرکت', 'demo1')
-// Type('با بیشترین سابقه کار', 'demo2')
+Type('به گروه تبلیغاتی', 'demo0', 70)
+Type('آرگو', 'demo1', 500)
+Type('...خوش آمدید', 'demo2', 70)
       
       
-// function Type(t, id) {
-//   var i = 0;
-//   var txt = t;
-//   var id = id;
-//   var speed = 120;
-//   typeWriter()
+function Type(t, id, speed) {
+  var i = 0;
+  var txt = t;
+  var id = id;
+  var speed = speed;
+  typeWriter()
 
-//   function typeWriter() {
-//     if (i < txt.length) {
-//       document.getElementById(id).innerHTML += txt.charAt(i);
-//       setTimeout(typeWriter, speed);
-//       i++;
-//     }
-//   }
-// }
+  function typeWriter() {
+    if (i < txt.length) {
+      document.getElementById(id).innerHTML += txt.charAt(i);
+      setTimeout(typeWriter, speed);
+      i++;
+    }
+  }
+}
+
+
