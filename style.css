@@ -242,7 +242,7 @@ nav img {
     color: rgba(233, 187, 62, 0.938);
     width: 35rem;
     height: 6rem;
-    margin: 0 auto 0 auto;
+    margin: 2rem auto 2rem auto;
     border-radius: 20px;
     border-top-right-radius: 0;
     display: flex;
@@ -265,7 +265,9 @@ nav img {
     align-items: center;
     margin: 0 0 1rem 0;
     width: 35rem;
-    background-color: rgb(255, 231, 15);
+    background-color: rgb(255, 209, 83);
+    border-radius: 20px;
+
 }
 .person .name {
     width: 10rem;
@@ -281,12 +283,12 @@ nav img {
 }
 .person .img img {
     width: 8rem;
-    border: solid rgb(141, 141, 141) 6px ;
-    
+    filter: grayscale(100%);
 }
 .social {
     display: flex;
     overflow: hidden;
+    padding: 1rem;
 }
 .social img {
     width: 2.2rem;
@@ -342,4 +344,36 @@ nav img {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
+    align-items: center;
+}
+.about_us {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.about_us__title {
+    color: white;
+    font-size: 2rem;
+    text-align: right;
+    overflow: hidden;
+}
+.about_us__text {
+    padding: 1rem 0;
+    max-width: 40rem;
+    text-align: right;
+    overflow: hidden;
+    font-size: 20px;
+}
+.about_us b {
+    color: black;
+    padding: 0 1rem;
+    background-color: white;
+    border-radius: 5px;
+}
+#contact {
+    min-height: 100vh;
 }
