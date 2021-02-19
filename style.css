@@ -292,6 +292,7 @@ nav img {
     display: flex;
     flex-direction:  column;
     margin: -2.5rem  auto 1rem auto;
+    box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.493);
 }
 
 
@@ -351,8 +352,8 @@ nav img {
     width: 100%;
     margin: 0 0 0 auto;
     text-align: center;
-    
 }
+
 .team {
     width: 70%;
     margin: 2rem auto;
@@ -396,4 +397,32 @@ nav img {
 
 a:active {
     color: rgb(180, 0, 0);
+}
+.products {
+    min-height: 100vh;
+    
+}
+.products_title {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+.products_title i {
+    margin: 15px 0 0 0;
+}
+.video_products {
+    margin: 0 7rem;
+}
+.products_row {
+    display: flex;
+}
+.video_product {
+    width: 50rem;
+    margin: 1rem;
+    transition: 350ms;
+    
+}
+.video_product:hover {
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.493);
 }
