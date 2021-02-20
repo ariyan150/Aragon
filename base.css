@@ -20,8 +20,9 @@
     height: 100%;
     width: 100%;
     border-radius: 4px;
-    transition: all 200ms;
+    transition: all 300ms;
     overflow: hidden;
+    filter: grayscale(100%);
 
     background-size: cover;
     background-position: center;
@@ -31,5 +32,6 @@
 .card:hover {
     box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
     transform:  scale(1.03);
+    filter: grayscale(0%);
  }
 
