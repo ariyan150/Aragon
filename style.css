@@ -29,23 +29,27 @@ body {
 }
 
 .nav {
-    margin: 55px 0 0 0;
+    margin: 0 0 0 0;
+    padding: 1rem 0;
     width: 100%;
     background-color: rgb(0, 0, 0);
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-between;
     position: fixed;
     transition: 400ms;
     z-index: 1000;
+    
 }
 .scroll {
+    display: none;
     background-color: rgb(5, 5, 5);
     transition: 400ms;
-    
+    padding: 0rem 0;
 }
 .scroll .a {
     color: rgb(184, 184, 184);
+    font-size: 1rem;
 }
 .poster img {
     width: 6rem;
@@ -61,7 +65,7 @@ body {
 }
 .a {
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: rgb(255, 255, 255);
     transition: 200ms;
     padding: 0 1rem;
@@ -69,6 +73,20 @@ body {
 }
 .a:hover {
     color: rgb(173, 0, 0);
+}
+
+.home-1 {
+    /* background-image: url(./header-bg.jpg);
+    background-size: 210vh 130vh ;
+    background-repeat: no-repeat;
+    background-position: center; */
+    background-image: url(./new/home.jpg);
+    background-repeat: no-repeat;
+    
+    background-size: 203vh 110vh ;
+
+    height: 100vh;
+    margin: 0 0 0 0;
 }
 
 
@@ -86,6 +104,7 @@ body {
     height: 100vh;
     margin: -1rem 0 0 0;
 }
+
 .home2 {
     background-color: black;
     background-image: url(./WITE2.jpg);
@@ -94,27 +113,24 @@ body {
     background-attachment: fixed;
     height: 100vh;
 }
-.header1 {
-    font-size: 3rem;
-   
-    text-align: right;
-    overflow: hidden;
+.home1 {
+    display: none;
 }
-.header2 {
-    font-size: 17rem;
-    font-weight: bolder;
-  
-    text-align: center;
-    overflow: hidden;
+.home__social_media {
+    margin: 0;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    
+    display: flex;
+    font-size: 2.5rem;
 }
-.header3 {
-    font-size: 3rem;
-    font-weight: bolder;
- 
-    text-align: left;
-    overflow: hidden;
+.social_media {
+    margin: 0 1rem;
 }
 .containerrr {
+    display: none;
     position: relative;
     top: 50%;
     left: 50%;
@@ -411,11 +427,12 @@ nav img {
     100%{background-position:0% 51%}
 }
 .typography {
-    min-height: 110vh;
+    min-height: 80vh;
     background-color: black;
-    background-image: url(./Untitled-5.jpg);
+    background-image: url(./Untitled-1.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center;
     background-attachment: fixed;
+    background-size: 203vh 110vh ;
 }
 
