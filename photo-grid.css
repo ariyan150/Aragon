@@ -4,7 +4,7 @@
   padding: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   grid-auto-rows: 240px;
-  
+  padding: 1rem 0;
 }
 
 /* Medium screens */
