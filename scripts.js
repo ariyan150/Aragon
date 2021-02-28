@@ -1,6 +1,6 @@
 const header = document.querySelector(".nav");
 const poster = document.querySelector("#poster");
-const home = document.querySelector(".home1");
+const home = document.querySelector(".observer");
 
 const sectionOneOptions = {};
 const sectionOneObserver = new IntersectionObserver

@@ -32,7 +32,7 @@ body {
     margin: 0 0 0 0;
     padding: 1rem 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 0);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -42,16 +42,9 @@ body {
     
 }
 .scroll {
-    background-color: rgba(255, 255, 255, 0.466);
+    background-color: rgba(0, 0, 0, 0.527);
     transition: 400ms;
-    padding: 0rem 0;
-}
-.scroll .a {
-    color: rgb(184, 184, 184);
-    font-size: 1rem;
-}
-.scroll  img {
-    width: 7rem;
+    padding: 0 0;
 }
 
 .links {
@@ -83,21 +76,25 @@ body {
     display: flex;
     margin: 0 0 0 5rem;
 }
-.scroll > .nav__socials {
-    font-size: 2rem;
-    transition: 500ms;
+.nav__socials .social_media {
+    margin: 0 1rem;
+}
+.scroll .nav__socials {
+    margin: 1rem 0 0 5rem;
 }
 .home-1 {
     background-image: url(./new/home4.jpg);
     background-repeat: no-repeat;
     background-size: cover ;
-    height: 104vh;
+    height: 106vh;
     margin: 0 0 0 0;
 
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .home-1 .fadebottom {
+    display: none;
     width: 100%;
     height: 6rem;
     background-image: linear-gradient(
@@ -107,60 +104,30 @@ body {
         white
     );
 }
-
-
-.home {
-    background-image: url(./WITE.jpg);
+.fourpages div {
     background-repeat: no-repeat;
-    background-size: contain;
-    background-attachment: fixed;
-
-    height: 100vh;
-    margin: -1rem 0 0 0;
-}
-.home1 {
-    opacity: 0;
-}
-.home2 {
-    background-color: black;
-    background-image: url(./WITE2.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover ;
     background-attachment: fixed;
     height: 100vh;
-}
 
-.home__social_media {
-    margin: 0;
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    color: rgb(255, 255, 255);
+    font-size: 12rem;
+    font-weight: bolder;
+
     display: flex;
-    font-size: 2.5rem;
+    align-items: center;
+    justify-content: center;
 }
-.social_media {
-    margin: 0 1rem;
+.fourpages__design {  
+    background-image: url(./4pages/DESIGN.png);
+    color: rgba(109, 255, 153, 0.425);
 }
-.containerrr {
-    display: none;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-16%, -46%);
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    color: black;
+.fourpages__editing {  
+    background-image: url(./4pages/EDITING_2.jpg);
+    color: rgba(44, 179, 241, 0.486);
 }
-.home2 .containerrr {
-    color: rgb(255, 255, 255);
-}
-
-
-nav img {
-    width: 5rem;
+.fourpages__filming {  
+    background-image: url(./4pages/FILMING.jpg);
+    color: rgba(255, 255, 255, 0.356);
 }
 
 .containerr {
@@ -281,8 +248,8 @@ nav img {
     width: 35rem;
     height: 6rem;
     margin: 4.5rem auto 1rem auto;
-    border-radius: 20px;
-    border-top-right-radius: 0;
+    
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -363,6 +330,7 @@ nav img {
 }
 .video_products {
     margin: 10px 5rem;
+    
 }
 .products_row {
     display: flex;
@@ -375,6 +343,7 @@ nav img {
     min-width: 23rem;
     margin: 1rem;
     transition: 350ms;
+    border: solid rgb(187, 187, 187) 7px;
 }
 .video_product:hover {
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.493);
