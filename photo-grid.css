@@ -1,19 +1,26 @@
 .photo-grid {
-  display: grid;
-  gap: 1rem;
-  padding: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  grid-auto-rows: 240px;
-  padding: 1rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  
+  /* display: grid; */
+  /* gap: 1.5rem; */
+  /* grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-auto-rows: 240px; */
+  min-height: 100vh;
+}
+.photo-grid__col {
+  min-width: 40vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Medium screens */
 @media screen and (min-width: 600px) {
-  .card-tall {
+  /* .card-tall {
     grid-row: span 2 / auto;
   }
 
   .card-wide {
     grid-column: span 2 / auto;
-  }
+  } */
 }

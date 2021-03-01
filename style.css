@@ -26,6 +26,11 @@
   }  
 body {
     font-family: Sahel;
+
+    /* background-image: url(./4pages/EDITING_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-attachment: fixed; */
 }
 
 .nav {
@@ -42,7 +47,7 @@ body {
     
 }
 .scroll {
-    background-color: rgba(0, 0, 0, 0.527);
+    background-color: rgba(0, 0, 0, 0.815);
     transition: 400ms;
     padding: 0 0;
 }
@@ -60,7 +65,6 @@ body {
     color: rgb(255, 255, 255);
     transition: 200ms;
     padding: 0 1rem;
-    font-family: Tanha;
     transition: 400ms;
 }
 .a img {
@@ -81,9 +85,11 @@ body {
 }
 .scroll .nav__socials {
     margin: 1rem 0 0 5rem;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
 }
 .home-1 {
-    background-image: url(./new/home4.jpg);
+    background-image: url(./new/home_page.jpg);
     background-repeat: no-repeat;
     background-size: cover ;
     height: 106vh;
@@ -92,6 +98,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-size: 7rem;
+    text-transform: uppercase;
+    font-weight: bolder;
 }
 .home-1 .fadebottom {
     display: none;
@@ -108,14 +117,29 @@ body {
     background-repeat: no-repeat;
     background-size: cover ;
     background-attachment: fixed;
-    height: 100vh;
+    height: 110vh;
 
-    font-size: 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fourpages__head {
+    flex: 8;
+    font-size: 13rem;
     font-weight: bolder;
-
+    margin: 2rem 0 0 0;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.fourpages__def {
+    color: white;
+    flex: 1;
+    display: flex;
+    
+}
+.each__def {
+    padding: 20px 0 0 0;
 }
 .fourpages__design {  
     background-image: url(./4pages/DESIGN.png);
@@ -308,29 +332,30 @@ body {
     filter: grayscale(0%);
     transform: scale(1.1);
 }
-
-.products_title {
-    font-family: Sahel;
+.products {
+    background-color: rgb(223, 223, 223);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 90vh;
+}
+.products__col {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
-    font-size: 2rem;
-    color: rgb(29, 29, 29);
-    
+    justify-content: space-evenly;
+    align-items: center;
 }
-.products_title .title {
-    margin: 0 20px 0 0;
-    color: rgb(61, 61, 61);
-    border-radius: 20px;
-    padding: 0 1rem 0.5rem 1rem;
-}
-.products_title i {
-    margin: 15px 0 0 15px;
-    transition: 350ms;
-}
-.video_products {
-    margin: 10px 5rem;
-    
+.products__poster {
+    font-size: 5rem;
+    font-weight: bolder;
+    color: rgb(92, 216, 164);
+    overflow: hidden;
+    margin: 0 0 0 2rem;
+    /* border-left: solid 4px rgb(92, 216, 164);
+    border-bottom: solid 4px rgb(92, 216, 164); */
+    padding: 0 0 0rem 1rem;
+    font-family: Tanha;
 }
 .products_row {
     display: flex;
@@ -340,10 +365,14 @@ body {
     overflow-y: hidden;
 }
 .video_product {
-    min-width: 23rem;
+    min-width: 25rem;
+    overflow: hidden;
     margin: 1rem;
     transition: 350ms;
-    border: solid rgb(187, 187, 187) 7px;
+    border: solid rgb(95, 255, 149) 4px;
+}
+#primary_video {
+    min-width: 37rem;
 }
 .video_product:hover {
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.493);
@@ -388,7 +417,33 @@ body {
     min-height: 100vh;
 }
 
-
+.filter-menu {
+    display: flex;
+    justify-content: center;
+    font-family: Sahel;
+    margin: 1rem 0;
+}
+.filter-menu li {
+    font-size: 1.2rem;
+    padding: 7px 15px;
+    color: rgb(255, 255, 255);
+    margin: 0 1.5rem;
+    transition: 300ms;
+    background-color: rgb(10, 131, 133);;
+}
+.filter-menu li.current,
+.filter-menu li:hover {
+    background-color: rgb(8, 194, 197);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.card.delete {
+    width: 0;
+    height: 0;
+    margin-left: -1rem;
+    transition: all 1.5s ease;
+    opacity: 0;
+}
 #gradient {
   width: 100%;
   height: 800px;
@@ -416,4 +471,48 @@ body {
     background-attachment: fixed;
     background-size: 203vh 110vh ;
 }
-
+.aboutPage {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+}
+.aboutPage__poster {
+    font-size: 6rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    min-width: 50%;
+    color: #02f19a;
+    opacity: 0.67;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-stretch: expanded;
+}
+.aboutPage__col {
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+.aboutPage__col i {
+    font-size: 4.5rem;
+    color: #02f19a;
+    opacity: 0.67;
+}
+.col__qout {
+    font-size: 1.7rem;
+    max-width: 17rem;
+    font-weight: bolder;
+    color: rgb(80, 80, 80);
+    line-height: 30px;
+    font-stretch: expanded;
+    text-transform: uppercase;
+    margin: 0 0 3rem 0;
+    overflow: hidden;
+}
+.col__def {
+    max-width: 21rem;
+    margin: 0 0 2rem 0;
+}

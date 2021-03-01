@@ -1,6 +1,9 @@
 const header = document.querySelector(".nav");
-const poster = document.querySelector("#poster");
+// const poster = document.querySelector("#poster");
 const home = document.querySelector(".observer");
+
+const navbar = document.querySelector(".links").children;
+
 
 const sectionOneOptions = {};
 const sectionOneObserver = new IntersectionObserver
@@ -10,11 +13,21 @@ const sectionOneObserver = new IntersectionObserver
       ) {
         entries.forEach(entry => {
           if (!entry.isIntersecting) {
+            navbar[0].querySelector("img").src = './new/home_white.png';
+            navbar[1].querySelector("img").src = './new/nemone_white.png';
+            navbar[2].querySelector("img").src = './new/ABOUT_US_3_white.png';
+
             header.classList.add("scroll");
-            poster.classList.add("poster_scroll");
+            // poster.classList.add("poster_scroll");
+
+            
           } else {
+            navbar[0].querySelector("img").src = './new/HOME.png';
+            navbar[1].querySelector("img").src = './new/sample.png';
+            navbar[2].querySelector("img").src = './new/ABOUT_.png';
+
             header.classList.remove("scroll");
-            poster.classList.remove("poster_scroll");
+            // poster.classList.remove("poster_scroll");
           }
         });
       },
