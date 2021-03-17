@@ -1,5 +1,5 @@
 const header = document.querySelector(".nav");
-// const poster = document.querySelector("#poster");
+ const logo = document.querySelector("#logo");
 const home = document.querySelector(".observer");
 
 const navbar = document.querySelector(".links").children;
@@ -19,9 +19,11 @@ const sectionOneObserver = new IntersectionObserver
 
             header.classList.add("scroll");
             // poster.classList.add("poster_scroll");
+            logo.src = "./black-removebg.png";
 
             
           } else {
+            logo.src = "./white-removebg.png";
             navbar[0].querySelector("img").src = './new/HOME.png';
             navbar[1].querySelector("img").src = './new/sample.png';
             navbar[2].querySelector("img").src = './new/ABOUT_.png';
@@ -62,13 +64,14 @@ sectionOneObserver.observe(home)
 var modal = document.getElementById("myModal");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var imgs = document.querySelectorAll(".card");
+var imgs = document.querySelectorAll(".contain_card");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 imgs.forEach(img => {
     img.onclick = function(){
+        innerimg = img.querySelector('.card')
         modal.style.display = "block";
-        let imgsrc = this.style.backgroundImage.split('(')[1].split(')')[0].split('"')[1]
+        let imgsrc = innerimg.style.backgroundImage.split('(')[1].split(')')[0].split('"')[1]
         modalImg.src = imgsrc;
         captionText.innerHTML = this.alt;
       }

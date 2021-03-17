@@ -1,5 +1,5 @@
 let sortBtn = document.querySelector('.filter-menu').children;
-let sortItem = document.querySelectorAll('.card');
+let sortItem = document.querySelectorAll('.contain_card');
 
 for (let i = 0; i < sortBtn.length; i++) {
     sortBtn[i].addEventListener('click', function() {
