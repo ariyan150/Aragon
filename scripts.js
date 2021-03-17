@@ -1,6 +1,5 @@
 const header = document.querySelector(".nav");
 const home = document.querySelector(".observer");
-
 const navbar = document.querySelector(".links").children;
 
 
@@ -12,18 +11,8 @@ const sectionOneObserver = new IntersectionObserver
       ) {
         entries.forEach(entry => {
           if (!entry.isIntersecting) {
-            navbar[0].querySelector("img").src = './new/home_white.png';
-            navbar[1].querySelector("img").src = './new/nemone_white.png';
-            navbar[2].querySelector("img").src = './new/ABOUT_US_3_white.png';
-
             header.classList.add("scroll");
-
-            
           } else {
-            navbar[0].querySelector("img").src = './new/HOME.png';
-            navbar[1].querySelector("img").src = './new/sample.png';
-            navbar[2].querySelector("img").src = './new/ABOUT_.png';
-
             header.classList.remove("scroll");
           }
         });
@@ -31,27 +20,6 @@ const sectionOneObserver = new IntersectionObserver
     sectionOneOptions);
 
 sectionOneObserver.observe(home)
-
-// Type('به گروه تبلیغاتی', 'demo0', 70)
-// Type('آرگو', 'demo1', 500)
-// Type('...خوش آمدید', 'demo2', 70)
-      
-      
-// function Type(t, id, speed) {
-//   var i = 0;
-//   var txt = t;
-//   var id = id;
-//   var speed = speed;
-//   typeWriter()
-
-//   function typeWriter() {
-//     if (i < txt.length) {
-//       document.getElementById(id).innerHTML += txt.charAt(i);
-//       setTimeout(typeWriter, speed);
-//       i++;
-//     }
-//   }
-// }
 
 
 

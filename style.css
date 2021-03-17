@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    
     overflow-x: hidden;
 }
 .close {
@@ -116,7 +115,6 @@ body {
     background-size: cover ;
     background-attachment: fixed;
     height: 110vh;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -152,121 +150,12 @@ body {
     color: rgba(255, 255, 255, 0.356);
 }
 
-.containerr {
-    background-color: #23435a;
-    margin: 0 0 0 0;
-}
-.cont {
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    padding: 0 6rem;
-    z-index: 0;
-}
-.cont .icon_left,.cont .icon_right {
-    font-size: 3rem;
-}
-.icon_right {
-    margin: auto 0rem 1.5rem 0;
-}
-.icon_left {
-    margin: 1.5rem 0rem 0 0;
-}
-.quot {
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    font-size: 1.4rem;
-    margin: 0 auto 4rem auto;
-    z-index: 1;
-}
-#cont2 .quot {
-    margin: 2.5rem 0 4rem 0;
-}
-.quot, .author, .text {
-    z-index: 0;
-}
-.quot .text {
-    padding: 0.5rem 14rem;
-    text-align: right;
-}
-.quot .author {
-    margin: 0rem 14rem;
-    padding: 1rem 0;
-    border-bottom: rgb(112, 112, 112) solid;
-    font-size: 1.2rem;
-    font-weight: bolder;
-}
-.gall {
-    position: relative;
-    z-index: 100 !important;
-    width: 65%;
-    background-color: rgb(240, 240, 240);
-    display: flex;
-    flex-direction:  column;
-    margin: -2.5rem  auto -2.5rem auto;
-    box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.493);
-}
-
-.radif {
-    display: flex;
-    background-color: #e6e6e6;
-    transition: 400ms;
-}
-.morab {
-    flex: 3;
-    margin: auto;
-    text-align: center;
-    font-size: 3rem;
-    display: flex;
-    flex-direction: column-reverse;
-}
-.mostat {
-    flex: 4;
-    text-align: center;
-    background-color: rgb(158, 135, 67);
-    height: 20rem;
-    background-image: url(./desk.jpg);
-    display: flex;
-    align-items: center;
-    filter: grayscale(100%);
-    transition: 350ms;
-}
-.mostat .text {
-    opacity: 0;
-    transition: 400ms;
-    padding: 1rem 1rem;
-    margin: auto auto;
-    font-size: 1.2rem;
-}
-
-.radif:hover {
-    color: rgb(255, 255, 255);
-    background-color: rgb(36, 36, 36);
-}
-.radif:hover .mostat .text {
-    opacity: 1;
-}
-.radif:hover .mostat  {
-    filter: grayscale(0%);
-}
-#r2 .mostat {
-    background-image: url(./deck2);
-}
-#r3 .mostat {
-    background-image: url(./desk3);
-}
-.gall img {
-    width: 18rem
-}
 .team_container {
     width: 100%;
     display: flex;
     min-height: 80vh;
     align-items: center;
     background-color: rgba(255, 255, 255, 0);
-    
 }
 
 .team {
@@ -372,8 +261,6 @@ body {
     color: rgb(92, 216, 164);
     overflow: hidden;
     margin: 0 0 0 2rem;
-    /* border-left: solid 4px rgb(92, 216, 164);
-    border-bottom: solid 4px rgb(92, 216, 164); */
     padding: 0 0 0rem 1rem;
     font-family: Bamchal;
 }
@@ -467,26 +354,9 @@ body {
     transition: all 1.5s ease;
     opacity: 0;
 }
-#gradient {
-  width: 100%;
-  height: 800px;
-  padding: 0px;
-  margin: 0px;
-}
-#gradient {
-    background: linear-gradient(90deg, #ee4545, #e18a36, #f7bb00, #66d74b, #1cdbe7, #3396fa, #c533fa);
-    background-size: 1400% 1400%;
 
-    animation: AnimationName 10s ease infinite;
-}
-
-@keyframes AnimationName {
-    0%{background-position:0% 51%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 51%}
-}
 .typography {
-    min-height: 100vh;
+    min-height: 120vh;
     background-color: black;
     background-image: url(./Untitled-1.jpg);
     background-repeat: no-repeat;
