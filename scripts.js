@@ -1,5 +1,4 @@
 const header = document.querySelector(".nav");
- const logo = document.querySelector("#logo");
 const home = document.querySelector(".observer");
 
 const navbar = document.querySelector(".links").children;
@@ -18,18 +17,14 @@ const sectionOneObserver = new IntersectionObserver
             navbar[2].querySelector("img").src = './new/ABOUT_US_3_white.png';
 
             header.classList.add("scroll");
-            // poster.classList.add("poster_scroll");
-            logo.src = "./black-removebg.png";
 
             
           } else {
-            logo.src = "./white-removebg.png";
             navbar[0].querySelector("img").src = './new/HOME.png';
             navbar[1].querySelector("img").src = './new/sample.png';
             navbar[2].querySelector("img").src = './new/ABOUT_.png';
 
             header.classList.remove("scroll");
-            // poster.classList.remove("poster_scroll");
           }
         });
       },
