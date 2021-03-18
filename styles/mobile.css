@@ -1,0 +1,45 @@
+@media screen and (max-width: 870px) {
+    .nav__button {
+        display: initial;
+        position: fixed;
+        z-index: 150;
+        cursor: pointer;
+        transition: 400ms;
+        transform: rotate(180deg);
+        top: 30px;
+        left: 30px;
+    }
+    .nav__button.active {
+        transform: rotate(0);
+    }
+    .nav__button img {
+        width: 80px;
+    }
+    .nav__socials, .scroll .nav__socials {
+        margin: 0 auto;
+    }
+    .nav {
+        justify-content: center;
+        margin: 0 auto;
+        top: -500px;
+        flex-direction: column-reverse;
+    }
+    .nav.active {
+        top: 0;
+    } 
+    .links {
+        flex-direction: column;
+        margin: 0 0 0 0;
+    }
+    a  {
+        font-size: 30px ;
+        margin: 0 0 20px 0;
+    }
+    .a img {
+        display: none;
+    }
+    .a:first-child, .scroll .a:first-child  {
+        margin: 20px 0 0 0;
+        font-size: 45px;
+    }
+  }

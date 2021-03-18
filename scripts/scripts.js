@@ -1,6 +1,7 @@
 const header = document.querySelector(".nav");
 const home = document.querySelector(".observer");
-const navbar = document.querySelector(".links").children;
+
+const banner = document.querySelector(".banner");
 
 
 const sectionOneOptions = {};
@@ -12,8 +13,10 @@ const sectionOneObserver = new IntersectionObserver
         entries.forEach(entry => {
           if (!entry.isIntersecting) {
             header.classList.add("scroll");
+            banner.classList.add("scroll_banner");
           } else {
             header.classList.remove("scroll");
+            banner.classList.remove("scroll_banner");
           }
         });
       },

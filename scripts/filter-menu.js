@@ -1,4 +1,4 @@
-let sortBtn = document.querySelector('.filter-menu').children;
+let sortBtn = document.querySelector('.filter-menu.pic').children;
 let sortItem = document.querySelectorAll('.contain_card');
 
 for (let i = 0; i < sortBtn.length; i++) {
