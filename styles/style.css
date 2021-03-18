@@ -5,6 +5,7 @@
     scrollbar-width: thin;
     scrollbar-color: rgb(255, 255, 255) rgb(0, 0, 0);
 }
+
 .close {
     overflow: hidden;
 }
@@ -201,7 +202,7 @@ a {
     position: absolute;
     min-height: 80vh;
     align-items: center;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
 }
 #lottie {
     overflow: hidden;
@@ -319,9 +320,8 @@ a {
 }
 .products_row {
     display: flex;
-    justify-content: center;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 .video_product {
     min-width: 25rem;
@@ -333,6 +333,9 @@ a {
     min-width: 40rem;
     border-radius: 30px;
 }
+.videos {
+    margin: 18px 0 0 0;
+}
 .video_card {
     width: 300px;
     border-radius: 10px;
@@ -341,6 +344,7 @@ a {
 }
 .video_card.delete {
     width: 0;
+    margin: 0;
 }
 /* .filter-menu.video, .products__col {
     transform: translate(260px, 0);
