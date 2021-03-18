@@ -1,0 +1,21 @@
+.photo-grid {
+  display: flex;
+  justify-content: space-evenly;
+  min-height: 100vh;
+}
+.photo-grid__col {
+  min-width: 40vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Medium screens */
+@media screen and (min-width: 600px) {
+  /* .card-tall {
+    grid-row: span 2 / auto;
+  }
+
+  .card-wide {
+    grid-column: span 2 / auto;
+  } */
+}
