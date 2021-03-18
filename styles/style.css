@@ -354,6 +354,7 @@ a {
     justify-content: center;
     font-family: Sahel;
     margin: 1rem 0;
+    transform: translate(-20px, 0);
 }
 .filter-menu li {
     font-size: 1.3rem;
@@ -366,6 +367,8 @@ a {
 .filter-menu li.current {
     text-decoration: line-through #02f19996 2px;
     color: rgb(0, 0, 0);
+    font-size: 1.9rem;
+    transform: translate(0, -15px);
 }
 .filter-menu li:hover {
     color: rgb(54, 54, 54);
