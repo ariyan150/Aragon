@@ -164,15 +164,18 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: Bamchal;
+    overflow: hidden;
 }
 .fourpages__head {
     flex: 8;
-    font-size: 13rem;
+    font-size: 17rem;
     font-weight: bolder;
-    margin: -8rem 0 0 0;
+    margin: -7rem 0 0 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 .fourpages__def {
     color: white;
@@ -212,12 +215,13 @@ a {
 .teamPage__poster {
     position: relative;
     left: -450px;
-    top: -40px;
+    top: 1810px;
     padding: 0 10px;
     font-size: 9rem;
     color: #02f19a;
     opacity: 0.67;
     font-family: Bamchal;
+    
 }
 .team__background {
     position: relative;
@@ -402,7 +406,17 @@ a {
     background-repeat: no-repeat;
     background-size: contain ;
     background-position: 0px -30px;
+
+    opacity: 0;
+    transition: 2s;
+    transform: translate(-750px,0);
 }
+.aboutPage.inscreen {
+    opacity: 1;
+    transform: translate(-20px,0);
+    transition: 2s;
+}
+
 .aboutPage__poster {
     font-size: 6rem;
     font-weight: bolder;

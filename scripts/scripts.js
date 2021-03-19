@@ -6,10 +6,7 @@ const banner = document.querySelector(".banner");
 
 const sectionOneOptions = {};
 const sectionOneObserver = new IntersectionObserver
-    (function(
-        entries,
-        sectionOneObserver
-      ) {
+    (function( entries, sectionOneObserver ) {
         entries.forEach(entry => {
           if (!entry.isIntersecting) {
             header.classList.add("scroll");
