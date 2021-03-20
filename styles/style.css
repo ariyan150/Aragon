@@ -164,12 +164,11 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: Bamchal;
     overflow: hidden;
 }
 .fourpages__head {
     flex: 8;
-    font-size: 17rem;
+    font-size: 14rem;
     font-weight: bolder;
     margin: -7rem 0 0 0;
     display: flex;
