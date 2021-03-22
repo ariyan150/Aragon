@@ -87,7 +87,7 @@ a {
     margin: 10px 0 0 70px;
 }
 .nav__socials a {
-    font-size: 35px;
+    font-size: 41px;
 }
 .scroll .a, .scroll a {
     color: rgb(255, 255, 255);
@@ -95,9 +95,12 @@ a {
 .scroll .nav__socials {
     margin: 15px 0 0 70px;
 }
+.scroll .nav__socials a {
+    font-size: 28px;
+}
 
 .home-1 {
-    background-image: url(../new/home_page.jpg);
+    background-image: url(../new/home\ .....jpg);
     background-repeat: no-repeat;
     background-size: cover ;
     height: 106vh;
@@ -106,7 +109,7 @@ a {
 .home-1 .banner {
     width: 1150px;
     position: relative;
-    top: 360px;
+    top: 290px;
     left: 130px;
     height: 50vh;
 }
@@ -214,7 +217,7 @@ a {
 .teamPage__poster {
     position: relative;
     left: -450px;
-    top: 1810px;
+    top: 1880px;
     padding: 0 10px;
     font-size: 9rem;
     color: #02f19a;
@@ -396,15 +399,14 @@ a {
     background-size: 203vh 110vh ;
 }
 .aboutPage {
-    height: 100vh;
+    height: 110vh;
     display: flex;
     align-items: center;
-    background-color: #ffffff;
-    font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
-    background-image: url(../cam/tw\ cam.jpg);
+    background-color: #ffffff; 
+    background-image: url(../cam/tw\ cam\ 2.jpg);
     background-repeat: no-repeat;
     background-size: contain ;
-    background-position: 0px -30px;
+    background-position: -340px -30px;
 
     opacity: 0;
     transition: 2s;
@@ -412,7 +414,7 @@ a {
 }
 .aboutPage.inscreen {
     opacity: 1;
-    transform: translate(-20px,0);
+    transform: translate(50px,0);
     transition: 2s;
 }
 
@@ -434,7 +436,7 @@ a {
     max-width: 30rem;
     display: flex;
     flex-direction: column;
-    margin: 0 0 0 250px;
+    margin: 0 0 0 200px;
 }
 .aboutPage__col i {
     font-size: 4.5rem;
