@@ -200,6 +200,10 @@ a {
     background-image: url(../4pages/FILMING.jpg);
     color: rgba(255, 255, 255, 0.356);
 }
+.fourpages__web {  
+    background-image: url(../4pages/web.jpg);
+    color: rgba(255, 255, 255, 0.356);
+}
 
 .team_container {
     width: 100%;
@@ -390,7 +394,7 @@ a {
 }
 
 .typography {
-    min-height: 120vh;
+    min-height: 130vh;
     background-color: black;
     background-image: url(../Untitled-1.jpg);
     background-repeat: no-repeat;
