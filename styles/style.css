@@ -305,6 +305,16 @@ a {
     width: 5.1rem;
     filter: grayscale(100%);
 }
+.linebreake {
+    width: 78%;
+    margin: 0 auto 80px auto;
+}
+.linebreake.seccond{
+    margin: 100px auto 0px auto;
+}
+.linebreake.third{
+    margin: 0px auto 0px auto;
+}
 .samplePage__poster {
     position: relative;
     
@@ -320,7 +330,7 @@ a {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    min-height: 100vh;
+    min-height: 70vh;
 }
 .products__col {
     position: relative;
@@ -404,7 +414,7 @@ a {
     background-size: 203vh 110vh ;
 }
 .aboutPage {
-    height: 110vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     background-color: #ffffff; 
