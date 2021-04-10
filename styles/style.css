@@ -79,7 +79,7 @@ a {
     width: 48px;
 }
 .scroll .a:hover, .a:hover, .nav__socials a:hover {
-    color: rgb(73, 73, 73);
+    color: rgb(83, 83, 83);
 }
 .scroll .a:first-child {
     margin: 0 0 0 10px;
@@ -212,7 +212,7 @@ a {
     width: 100%;
     display: flex;
     position: relative;
-    min-height: 80vh;
+    
     align-items: center;
     
 }
@@ -352,12 +352,16 @@ a {
     margin: 1rem;
     transition: 350ms;
 }
-#primary_video {
+.primary_video {
     min-width: 40rem;
-    border-radius: 30px;
+    border-radius: 15px;
 }
 .videos {
     margin: 18px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
 }
 .video_card {
     width: 300px;
@@ -446,11 +450,11 @@ a {
     justify-content: center;
     align-items: center;
     font-stretch: expanded;
-    margin: -0rem 0 0 0;
+    
     font-family: Bamchal;
 }
 .aboutPage__col {
-    max-width: 30rem;
+    width: 30rem;
     display: flex;
     flex-direction: column;
     margin: 0 0 0 200px;
