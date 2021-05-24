@@ -116,16 +116,18 @@
         margin: 0;
     }
     .team_container {
-        flex-direction: column;
-
+        display: block;
+        height: 120vh;
     }
     .teamPage__poster {
-        left: 0;
+        left: 50%;
         top: -450px;
+        transform: translate(-25%,0);
     }
     .team {
-        left: 0;
+        left: 50%;
         top: -300px;
+        transform: translate(-40%,0);
     }
     .contactPage {
         margin: 50px 0;
@@ -153,7 +155,8 @@
     form .textArea textarea {
         padding: 20px 20px;
         margin: 0 0px 0 0px;
-        
+        width: 60vw;
+        max-width: 440px;
     }
     .contactPage__form .botton {
         margin: 10px 0 0 0;
