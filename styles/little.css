@@ -2,6 +2,18 @@
     .fourpages__head {
         font-size: 80px;
     }
+    .typography {
+        background-size: contain;
+        max-height: 100vw;
+    }
+    .aboutPage {
+        height: unset;
+        background-size: cover contain;
+        background-position: -340px -30px;
+    }
+    .aboutPage__poster {
+        font-size: 80px;
+    }
     .photo-grid {
         flex-direction: column;
       }
@@ -15,5 +27,19 @@
     }
     .filter-menu li.current {
         font-size: 1.5rem;
+    }
+    .team__row__body {
+        display: flex;
+        flex-direction: column;
+    }
+    .teamPage__poster {
+        font-size: 80px;
+        position: initial;
+    }
+    .team__background {
+        position: initial;
+    }
+    .team__background img {
+        width: 100%;
     }
 }
