@@ -1,15 +1,17 @@
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
     .home-1 .banner {
         width: auto;
         position: relative;
-        top: 290px;
+        top: 190px;
         left: 30px;
-        height: 50vh;
+        height: 500px;
     }
     .home-1 .up {
         font-size: 25px;
         letter-spacing: 15px;
         margin: 0 0 0 10px;
+        height: 100px;
+        top: 50%;
     }
     .up i {
         font-size: 30px;
@@ -21,25 +23,31 @@
         transition: 400ms;
     }
     .home-1 .down {
-        font-size: 20px;
+        align-items: center;
         display: flex;
-        flex-direction: column;
+        flex-direction: row-reverse;
+        gap: 15px;
         margin: 0px 0px 0 0;
         justify-content: center;
+        height: 70px;
     }
     .down h5 {
-        font-size: 30px;
+        font-size: 36px;
         overflow: hidden;
         margin: 0 0;
     }
     .scroll_banner .down {
-        transform: translate(0px, -120%);
+        transform: translate(0px, -70px);
         overflow: visible;
+        flex-direction: row-reverse;
     }
     .scroll_banner .up {
         overflow: visible;
-        transform: translate(0px, 100%);
+        transform: translate(0px, 100px);
         letter-spacing: 15px;
+    }
+    .scroll_banner .khat {
+        transform: translate(130px, 0);
     }
     .fourpages__head {
         font-size: 80px;
@@ -51,15 +59,25 @@
     .aboutPage {
         height: unset;
         background-size: cover contain;
-        background-position: -340px -30px;
+        background-position: -360px -90px;
     }
     .aboutPage__poster {
         font-size: 80px;
     }
+    .aboutPage__col {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        margin: 250px 0 80px 0px;
+    }
+    .aboutPage__col i {
+        font-size: 3.5rem;
+    }
     .photo-grid {
         flex-direction: column;
-      }
-      .contain_card, .card {
+        align-items: center;
+    }
+    .contain_card, .card {
         width: 70vw;
         height: 70vw;
     }
@@ -90,5 +108,11 @@
     }
     .team__background img {
         width: 100%;
+    }
+    .form_info input {
+        width: 70%;
+    }
+    .name_email {
+        text-align: center;
     }
 }
