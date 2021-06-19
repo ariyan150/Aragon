@@ -1,4 +1,46 @@
 @media screen and (max-width: 450px) {
+    .home-1 .banner {
+        width: auto;
+        position: relative;
+        top: 290px;
+        left: 30px;
+        height: 50vh;
+    }
+    .home-1 .up {
+        font-size: 25px;
+        letter-spacing: 15px;
+        margin: 0 0 0 10px;
+    }
+    .up i {
+        font-size: 30px;
+    }
+    .home-1 .khat {
+        width: 50%;
+        height: 2px;
+        background-color: #d9e8f8;
+        transition: 400ms;
+    }
+    .home-1 .down {
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        margin: 0px 0px 0 0;
+        justify-content: center;
+    }
+    .down h5 {
+        font-size: 30px;
+        overflow: hidden;
+        margin: 0 0;
+    }
+    .scroll_banner .down {
+        transform: translate(0px, -120%);
+        overflow: visible;
+    }
+    .scroll_banner .up {
+        overflow: visible;
+        transform: translate(0px, 100%);
+        letter-spacing: 15px;
+    }
     .fourpages__head {
         font-size: 80px;
     }
@@ -28,13 +70,20 @@
     .filter-menu li.current {
         font-size: 1.5rem;
     }
+    .team {
+        position: relative;
+        display: initial;
+        left: 80px;
+        top: -150px;
+    }
     .team__row__body {
         display: flex;
         flex-direction: column;
     }
     .teamPage__poster {
         font-size: 80px;
-        position: initial;
+        position: relative;
+        top: -220px;
     }
     .team__background {
         position: initial;

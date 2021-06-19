@@ -429,15 +429,9 @@ a {
     background-size: contain ;
     background-position: -340px -30px;
 
-    opacity: 0;
-    transition: 2s;
-    transform: translate(-550px,0);
-}
-.aboutPage.inscreen {
-    opacity: 1;
-    transform: translate(50px,0);
     transition: 2s;
 }
+
 
 .aboutPage__poster {
     font-size: 6rem;

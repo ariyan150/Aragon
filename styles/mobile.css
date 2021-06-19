@@ -89,7 +89,8 @@
         /* background-size: 33vw 29vw; */
     }
     .primary_video {
-        display: none;
+        max-width: 300px;
+        min-width: 300px;
     }
     .aboutPage {
         transform: translate(0px,0);
